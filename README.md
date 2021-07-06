@@ -34,4 +34,7 @@ Let me state that it's my first Python program, so i'm sorry if you have trouble
 For me it works really well and i haven't done crazy things on my PC to get the result,
 so i guess it will work for you all.
 
+Note that there's that i don't really where it comes from, but i think it comes from the overuse of the program, that makes the instagram api block you api.
+I don't know how many time this blocking is effective, check more by entering 1 when the program asks if you need help at the end.
+
 Also check others https://github.com/megadose repositories, he's doing a really great work.
