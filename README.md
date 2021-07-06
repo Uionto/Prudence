@@ -29,5 +29,9 @@ git clone https://github.com/megadose/holehe.git
 cd holehe/
 python3 setup.py install
 ```
+### Aditional talk
+Let me state that it's my first Python program, so i'm sorry if you have trouble that i can't fix.
+For me it works really well and i haven't done crazy things on my PC to get the result,
+so i guess it will work for you all.
 
 Also check others https://github.com/megadose repositories, he's doing a really great work.
