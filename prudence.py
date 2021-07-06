@@ -82,15 +82,25 @@ if int(programchoice) == 2:
 
             trio.run(main)
 
-            #Clear the raw file to get only the True or False response
             tri = open('out.txt', 'rt')
+            #Making some clear in the raw file response (just keeping the "True" or "False" of the 'exists:'
             for line in tri:
-                entri = (line.replace("[{'name': 'instagram', 'domain': 'instagram.com', 'method': 'register', 'frequent_rate_limit': True, 'rateLimit': False, 'exists': ", ''))
-                triade = (entri.replace(", 'emailrecovery': None, 'phoneNumber': None, 'others': None}]", ''))
-                print(email + ' = ' + triade)
-
-            #Deleting temporary txt file
+                  entri = (line.replace("[{'name': 'instagram', 'domain': 'instagram.com', 'method': 'register', 'frequent_rate_limit': True, 'rateLimit': False, 'exists': ", ''))
+                  triade = (entri.replace(", 'emailrecovery': None, 'phoneNumber': None, 'others': None}]", ''))
+                  print(email + ' = ' + triade)
+                        
+            #Deleting "out.txt" file
             os.remove('out.txt')
 
+#Writing the list of problems happening to fill it in the help. If you found some problems, write them in the Issue section of this repo in Github and ill write them down here.
+errorlist = (colored("[Prudence] * Error #1:\n   Getting 'email = [{'name': 'instagram', 'domain': 'instagram.com', 'method': 'register', 'frequent_rate_limit': True, 'rateLimit': True, 'exists': False' instead of 'email = True / False'\n\n   You used to many time the program and Instagram blocked your Ip to get these informations :/\n   Try to wait and try again later.", 'yellow'))
 
-            
+#Ask for help
+needhelp = input(colored('Do you need help ?\n[1] - Yes\n[2] - No\n >>> ', 'red'))
+if int(needhelp) > 2:
+      print(colored('Invalid choice', 'red'))
+if int(needhelp) < 1:
+      print(colored('Invalid choice', 'red'))
+
+if int(needhelp) == 1:
+      print(errorlist)
