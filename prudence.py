@@ -93,10 +93,10 @@ if int(programchoice) == 2:
             os.remove('out.txt')
 
 #Writing the list of problems happening to fill it in the help. If you found some problems, write them in the Issue section of this repo in Github and ill write them down here.
-errorlist = (colored("[Prudence] * Error #1:\n   Getting 'email = [{'name': 'instagram', 'domain': 'instagram.com', 'method': 'register', 'frequent_rate_limit': True, 'rateLimit': True, 'exists': False' instead of 'email = True / False'\n\n   You used to many time the program and Instagram blocked your Ip to get these informations :/\n   Try to wait and try again later.", 'yellow'))
+errorlist = (colored("[Prudence] * Error #1:\n   Getting 'email = [{'name': 'instagram', 'domain': 'instagram.com', 'method': 'register', 'frequent_rate_limit': True, 'rateLimit': True, 'exists': False' instead of 'email = True / False'\n\n   You used to many time the program and Instagram blocked your access to the API.\n   Wait and try again later.", 'yellow'))
 
 #Ask for help
-needhelp = input(colored('Do you need help ?\n[1] - Yes\n[2] - No\n >>> ', 'red'))
+needhelp = input(colored('Do you have an error ?\n[1] - Yes\n[2] - No\n >>> ', 'red'))
 if int(needhelp) > 2:
       print(colored('Invalid choice', 'red'))
 if int(needhelp) < 1:
