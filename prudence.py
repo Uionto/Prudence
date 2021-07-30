@@ -20,10 +20,10 @@ print(colored('S/o https://githhub.com/megadose for the module holehe', 'yellow'
 print(colored('======================================================', 'yellow'))
 
 #Choosing the program between simple email lookup or list of email lookup
-programchoice = input(colored('[1] - Single email lookup\n[2] - List of email lookup\n >>> ', 'yellow'))
+programchoice = input(colored('[1] - Single email lookup\n[2] - List of email lookup\n[3] - I have an error message\n >>> ', 'yellow'))
 
 #Stopping the program if the int(input) is < than 1 or > than 2
-if int(programchoice) > 2:
+if int(programchoice) > 3:
       print(colored('Invalid choice', 'red'))
 if int(programchoice) < 1:
       print(colored('Invalid choice', 'red'))
@@ -92,15 +92,8 @@ if int(programchoice) == 2:
             #Deleting "out.txt" file
             os.remove('out.txt')
 
-#Writing the list of problems happening to fill it in the help. If you found some problems, write them in the Issue section of this repo in Github and ill write them down here.
-errorlist = (colored("[Prudence] * Error #1:\n   Getting 'email = [{'name': 'instagram', 'domain': 'instagram.com', 'method': 'register', 'frequent_rate_limit': True, 'rateLimit': True, 'exists': False' instead of 'email = True / False'\n\n   You used to many time the program and Instagram blocked your access to the API.\n   Wait and try again later.", 'yellow'))
+#Launching the third program (help)
+errorlist = (colored("[Error #1]:\n   Getting as result :\nemail = [{'name': 'instagram', 'domain': 'instagram.com', 'method': 'register', 'frequent_rate_limit': True, 'rateLimit': True, 'exists': False' instead of 'email = True / False\n\n[Solution #1] You used to many time the program and Instagram blocked your Ip to get these informations :/\n==> Wait and try again later.", 'blue'))
 
-#Ask for help
-needhelp = input(colored('Do you have an error ?\n[1] - Yes\n[2] - No\n >>> ', 'red'))
-if int(needhelp) > 2:
-      print(colored('Invalid choice', 'red'))
-if int(needhelp) < 1:
-      print(colored('Invalid choice', 'red'))
-
-if int(needhelp) == 1:
+if int(programchoice) == 3:
       print(errorlist)
